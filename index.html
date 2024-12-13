@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Selling Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>DoorWorld by Badal</h1>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Explore Our Beautiful Doors</h2>
+            <p>Quality doors that enhance your home’s aesthetic</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Our Doors</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/8/446635674/SN/TO/KU/142235240/fancy-wooden-membrane-door-500x500.jpeg" alt="Wooden Door">
+                <h3>Wooden Door</h3>
+                <p>Beautiful handcrafted wooden doors.</p>
+                <button onclick="showProductDetails('Wooden Door')">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.jdmagicbox.com/quickquotes/images_main/aluminium-sliding-mesh-door-height-6-5-feet-2224030056-gljtlwio.jpg" alt="Glass Door">
+                <h3>Glass Door</h3>
+                <p>Elegant glass doors for modern homes.</p>
+                <button onclick="showProductDetails('Glass Door')">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrGSGsd7WzkybPwkTAKk0Yj_GAa-v3t533Kw&s" alt="Steel Door">
+                <h3>Steel Door</h3>
+                <p>Strong and secure steel doors.</p>
+                <button onclick="showProductDetails('Steel Door')">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://urbanfront.imgix.net/assets/Articles/what-you-need-to-know-about-pivot-doors/pivot-hinged-doors.jpg?auto=format%2Cformat&fit=crop&h=2400&ixlib=php-3.3.1&w=1600" alt="Steel Door">
+                <h3>Hinged Door</h3>
+                <p>Common door type with fixed hinges on one side, allowing it to open inward or outward.</p>
+                <button onclick="showProductDetails('Steel Door')">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://i.pinimg.com/564x/3f/07/a1/3f07a12a42e66e0bc32ad60de0338b6e.jpg" alt="Steel Door">
+                <h3>Slide Door</h3>
+                <p>Moves horizontally along a track, saving space and commonly used in closets and patios.</p>
+                <button onclick="showProductDetails('Steel Door')">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://www.tisecurity.co.uk/wp-content/uploads/2018/11/Automatic-Opening-Doors.jpg" alt="Steel Door">
+                <h3>Automated Door</h3>
+                <p>Opens and closes automatically using sensors, commonly seen in commercial and public spaces for convenience.</p>
+                <button onclick="showProductDetails('Steel Door')">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://image.made-in-china.com/202f0j00rbikcjvsZEqR/Swirl-Design-Wrought-Iron-Security-Door-Asymmetrical-Single-Screen-Plasma-Main-Front-Doors.webp" alt="Steel Door">
+                <h3>Security Door</h3>
+                <p>Heavy-duty door with enhanced strength and lock mechanisms for increased security, often used for entrances.</p>
+                <button onclick="showProductDetails('Steel Door')">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images-cdn.ubuy.co.in/66ee334da9c00f7446677be9-multifold-accordion-doors-interior.jpg" alt="Steel Door">
+                <h3>Accordion  Door</h3>
+                <p> Folds like an accordion, typically used for dividing rooms or closets, providing flexibility in space usage.</p>
+                <button onclick="showProductDetails('Steel Door')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Modal -->
+    <div id="product-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="product-title"></h2>
+            <p id="product-description"></p>
+            <a href="mailto:sales@doorworld.com" class="btn">Contact Seller</a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 DoorWorld by Badal. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
